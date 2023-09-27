@@ -39,10 +39,6 @@ const AwardsSlider = () => {
       detail: "America's Fastest Growing Companies",
       image: "inc_5000.png",
     },
-    // {
-    //   title: "Top Web Development Agencies 2023",
-    //   image: "rank_watch.webp",
-    // },
   ];
 
   const settings = {

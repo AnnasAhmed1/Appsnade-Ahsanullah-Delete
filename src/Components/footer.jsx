@@ -18,7 +18,7 @@ const Footer = () => {
     "Game Development",
     "Bluetooth App development",
     "Cloud based services Apps",
-    // "Mobile App Support",
+    "Robotics development",
     // "Startup App Development",
     // "Flutter App Development",
     // "Cross Platform App Development",

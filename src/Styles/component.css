@@ -854,7 +854,7 @@ footer .bottom-section {
     line-height: 26px;
     margin-bottom: 15px;
 }
-
+.sub-nav-container>div>div h4,
 .sub-nav-container>div>div a {
     display: block;
     font-size: 16px;

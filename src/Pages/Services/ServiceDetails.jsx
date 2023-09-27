@@ -44,6 +44,173 @@ const ServiceDetails = () => {
   const navigate = useNavigate();
   const service = servicename.split("-")[0];
 
+  const seviceData = {
+    "Web-Development": [
+      {
+        heading: "Best Web Development Company",
+        text: [
+          "We help our clients reach their company objectives by offering them top-notch web development services. Our team of skilled custom website developers at Appswaves is proficient in the newest frameworks and technologies.",
+          "We use a detailed development process that includes planning, designing, developing, testing, and deployment. By following our clients' standards and requirements, we make sure they get the best results possible.",
+        ],
+      },
+      {
+        heading: "Web Development in the USA",
+        text: [
+          "With the help of bespoke website design and development services, establish an effective digital presence. Create a website that is attractive, responsive, and fully functioning to help your business soar.",
+          "Appswaves is a leading custom website developer service provider in the USA that serves businesses and startups with client-centric web solutions. We as the best web development company prioritize providing the greatest coding, hosting, localization, UX, UI, coding, and a variety of other procedures to produce Web development in the USA services that are ready to go live.",
+        ],
+      },
+      {
+        heading:
+          "Experience The Advantages – Your Best Web Development Company",
+        text: [
+          "With the help of bespoke website design and development services, establish an effective digital presence. Create a website that is attractive, responsive, and fully functioning to help your business soar.",
+        ],
+
+        subData: [
+          {
+            heading: "Agile Methodology for Development",
+            text: [
+              "To give our clients the most flexibility possible during the development process, our WordPress developer and custom website developer employ an agile development style. This entails constant collaboration with you as we gather requirements, deliver regular updates and demos, and incorporate your feedback into the development process.",
+            ],
+          },
+          {
+            heading: "An enthusiastic project manager",
+            text: [
+              "We assign a dedicated project manager to each of our clients who acts as a single point of contact throughout the development process. This guarantees that you receive clear communication, timely updates, and a seamless development experience.",
+            ],
+          },
+          {
+            heading: "Quality Control",
+            text: [
+              "Every solution we provide is rigorously tested to ensure that it satisfies our high standards for quality and dependability, and we have a dedicated team of quality assurance professionals. This guarantees that your solution is free of bugs, secure, and operates at its optimum performance.",
+            ],
+          },
+          {
+            heading: "Cost-Effective Solutions",
+            text: [
+              "We are aware that pricing is a crucial factor for businesses of all sizes. Because of this, we deliver solutions that are affordable and offer the highest return on your investment. We collaborate closely with you to create a solution that fits within your budget and produces the best results for your company.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Projects from our best web development company",
+
+        subData: [
+          {
+            heading: "Designing & Developing Websites in HTML5",
+            text: [
+              "By emphasizing scalability, loading speed, and responsiveness, our skilled HTML5 custom website developers provide and implement full solutions that precisely fit your corporate environment.",
+              "End-to-end HTML5 solutions from Appswaves are essential for providing custom website development services, which may serve US business owners and entrepreneurs in all areas from design and development to strategy and consultancy.",
+            ],
+          },
+          {
+            heading: "Website design and development by a WordPress developer",
+            text: [
+              "Appswaves as the best web development company has unparalleled experience in designing and developing engaging, customized WordPress-based websites. Our WordPress developer guarantees scalable, high-performance, secure, and feature-rich digital products that assist companies in creating a strong brand presence.",
+              "You have come to the right website if you are seeking top-notch web development in the USA. At every stage of your business's development, our expertise as custom website developers and WordPress developers may help you succeed.",
+            ],
+          },
+          {
+            heading: "Custom Website Development Services",
+            text: [
+              "We understand the demands imposed by businesses, with the help of custom website developers we customize our web solutions to meet their needs, resulting in completely personalized, secure websites that deliver results. Our innovative technologies assist companies in streamlining operations and promoting development.",
+              "In addition to assisting with business difficulties unique to your sector, Appswaves has the knowledge and resources to ensure that your objectives are successfully attained.",
+            ],
+          },
+          {
+            heading: "Website Development Using Laravel",
+            text: [
+              "To design and create web-based products that adhere to best practices and industry standards, our skilled Laravel developers use robust development processes. Businesses get quicker outcomes using  Appswaves website  services.",
+              "Our professionals are committed to offering clients scalable business solutions that help improve earnings, customer experience, and productivity through high-quality Laravel web development.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Leading WordPress Development Services",
+
+        subData: [
+          {
+            heading: "Make a WordPress website to promote your dream products",
+            text: [
+              `Appswaves, the best web development company, has consistently worked to offer innovative, custom solutions to its valued clients. We strive to uphold our WordPress developer goal "to meet every need" by offering cutting-edge website development services.`,
+              "The skilled WordPress developers at Appswaves are available to provide top-notch website development services everywhere in the world. We are aware of the effectiveness of responsive websites. To improve your website's conversion rate, our WordPress developers offer responsive websites that adapt to mobile, tablet, and desktop sizes.",
+              "Our WordPress developers are highly skilled in integrating WordPress with popular web integrations including responsive web design, quick extendable websites, richly equipped CRMs, and e-commerce capabilities.",
+              "We assist a variety of content management systems, including custom-designed CMS, WordPress development services, Drupal development services, Joomla development services, and e-commerce development services, to create compelling content that attracts your target audience.",
+            ],
+          },
+        ],
+      },
+      {
+        heading:
+          "We like to create highly functional and goal-oriented websites.",
+        text: [
+          "Our team of WordPress and custom website developers provides competent assistance that meets your business objectives and creates websites that speed up digital transformation.",
+          "As the best web development company, we understand that the usability, accessibility, and fundamental aesthetics of your website directly affect the market success of your business. Therefore, as a WordPress developer and custom website developer, we make it a point to use the most recent web technologies to ensure that our services meet industry standards and generate the highest level of customer satisfaction.",
+        ],
+      },
+    ],
+    "IT-consultancy": [
+      {
+        heading: "IT Consultancy Agency",
+        text: [
+          "IT consulting companies frequently offer guidance on important issues including mergers and acquisitions. They also provide advice on more specialized company topics like branding or pricing. IT consulting companies can support the development of a new product line or help to strengthen a company's marketing approach.",
+        ],
+      },
+      {
+        heading: "Information Technology (IT) Consulting Services",
+        text: [
+          "Appswaves are at the leading edge of technological advancement. We are more than just IT consultants because we are a top-tier IT consulting agency with a team that is deeply knowledgeable in technology. We work with you to create an IT roadmap that is prepared for the future. We take a customized strategy to make sure that your business not only adjusts but also thrives. We're here to improve your journey at every turn, from digitizing processes to optimizing your software portfolio to leveraging the potential of mobile solutions.",
+        ],
+      },
+      {
+        heading: "WE OFFER IT CONSULTING SERVICES",
+        text: [
+          "Join Appswaves on a revolutionary IT adventure. As an IT consulting firm, we don't simply offer advice; we also work with you to improve your software architecture and create a tech-focused digital strategy. Our software engineers and IT consultants provide a seamless digital transformation, from strategic planning to exact execution, by optimizing your software portfolio.",
+        ],
+      },
+      {
+        heading: "IT Consulting Services and Solutions for Business",
+        text: [
+          "Are you ready to turn your IT challenges to your advantage? Let's get started and have an exchange of ideas. The Managed Service Provider (MSP) Appswaves assists businesses in overcoming their most difficult technological problems.",
+          "Your company may remain secure, effective, and profitable with the help of our advanced IT consulting services. We provide expert advice on the strategic technological path you must take to stay ahead of the technology curve—and your competition. We are a prominent IT Consulting company and one of the top 30 MSPs nationwide.",
+        ],
+      },
+      {
+        heading: "What kinds of IT consulting services does Appswaves provide?",
+        text: [
+          "You can choose from a wide range of IT consulting services at Appswaves. When you need expert support, our IT consultants  provide an immediate presence, a wealth of resources, and great understanding.",
+          "The IT consultants at Appswaves assist you in keeping up with the rapidly changing IT world of today, from IT strategy to IT budgeting, from business continuity planning to cloud and data transfer services, and beyond.",
+        ],
+      },
+      {
+        heading: "Why Are IT Consulting Services Beneficial?",
+        text: [
+          "The main advantage of working with Appswaves IT consultants is that you get the knowledge without the cost. Without having to hire and manage this expertise yourself, as a presenting IT consulting company, you have direct access to a team of 350+ skilled technicians—24/7/365. As an IT consulting firm, we make sure that You have access to plenty of specialized expertise, tried-and-true best practices, and effective procedures, all of which are based on our tens of thousands of hours of experience working with numerous companies.",
+          "That is the main advantage. However, there are eight additional advantages to hiring an IT consultant.",
+        ],
+      },
+      {
+        heading:
+          "What Distinguishes IT Consulting Services from IT Consulting?",
+        text: [
+          "The distinction between strategy and implementation is the primary distinction between IT consulting and IT consulting services. You are instructed by an IT consultant as to what to do, why, and possibly even how. But that approach is carried out by an IT consulting services company.",
+          "An IT consultant hands you a plan. An IT consulting services company carries out that plan.",
+          "Your migration to the cloud is advised by an IT consultants. An IT consulting services firm carries out that migration.",
+        ],
+      },
+      {
+        heading:
+          "IT Consulting Services that are Strategic Giving You a Competitive Advantage",
+        text: [
+          "One of the leading IT consulting companies, Appswaves offers specialized IT consultation services and BUSINESS IT SUPPORT to assist in resolving your IT problems. Utilizing highly efficient IT strategies is made possible by utilizing strategic IT consulting services.",
+        ],
+      },
+    ],
+  };
+
   return (
     <Layout gradientButton={true}>
       <main className="service-details-main">
@@ -67,17 +234,17 @@ const ServiceDetails = () => {
                   {" " + servicename}
                 </span>
               </p>
-              <H1
-                color={"#14ffff"}
-                text={`${servicename?.replace(/-/g, " ")} Company`}
+              <H1 text={`${servicename?.replace(/-/g, " ")} Company`} />
+              <P2
+                // text={`Your search for the best ${service} app development company ends here because Appswaves has a team of experienced ${service} app developers and business specialists ready to help you with your app idea.`}
+                text={`
+            We help our clients reach their company objectives by offering them top-notch web development services. Our team of skilled custom website developers at Appswaves is proficient in the newest frameworks and technologies.
+            `}
               />
               <P2
-                color={"#ffff"}
-                text={`Your search for the best ${service} app development company ends here because Appswaves has a team of experienced ${service} app developers and business specialists ready to help you with your app idea.`}
-              />
-              <P2
-                color={"#ffff"}
-                text={`Over the years, we’ve developed several custom ${service} apps and helped clients globally by bringing their ${service} app ideas to life.`}
+                text={
+                  "We use a detailed development process that includes planning, designing, developing, testing, and deployment. By following our clients' standards and requirements, we make sure they get the best results possible."
+                }
               />
               <GradientButton
                 text={`Build Your ${service} App`}
@@ -143,41 +310,41 @@ const ServiceDetails = () => {
               </form>
             </div>
           </div>
-          <div className="featured-container main-section">
-            <div className="container">
-              <div>
-                <h1>300 +</h1>
-                <p>
-                  <img src={require("../../Assets/app_developed.png")} alt="" />
-                  Apps Developed
-                </p>
-              </div>
-              <div>
-                <h1>65 +</h1>
-                <p>
-                  <img src={require("../../Assets/app_developed.png")} alt="" />
-                  Clutch Review
-                </p>
-              </div>
-              <div>
-                <h1>35 +</h1>
-                <p>
-                  <img src={require("../../Assets/app_developed.png")} alt="" />
-                  Industries Served
-                </p>
-              </div>
-            </div>
-            <button
-              className="white-button"
-              onClick={() => {
-                navigate("/contact");
-              }}
-            >
-              Lets Work Together
-            </button>
-          </div>
         </section>
-        <section className="digital-expertise main-section">
+        <div className="featured-container main-section">
+          <div className="container">
+            <div>
+              <h1>300 +</h1>
+              <p>
+                <img src={require("../../Assets/app_developed.png")} alt="" />
+                Apps Developed
+              </p>
+            </div>
+            <div>
+              <h1>65 +</h1>
+              <p>
+                <img src={require("../../Assets/app_developed.png")} alt="" />
+                Clutch Review
+              </p>
+            </div>
+            <div>
+              <h1>35 +</h1>
+              <p>
+                <img src={require("../../Assets/app_developed.png")} alt="" />
+                Industries Served
+              </p>
+            </div>
+          </div>
+          <button
+            className="white-button"
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
+            Lets Work Together
+          </button>
+        </div>
+        {/* <section className="digital-expertise main-section">
           <div className="container">
             <div>
               <P1 text={"OUR DIGITAL EXPERTISE"} color={"#ef5123"} />
@@ -187,20 +354,17 @@ const ServiceDetails = () => {
                 }}
                 className="heading"
               >
-                Top {service} App Development Services to bring Your Vision to
-                Life
+                Experience The Advantages - Your Best Web Development Company
               </h2>
               <P2
-                text={`As a full-fledged ${service} app development company, we enable ambitious entrepreneurs and business owners to convert their app ideas into a feature-rich ${service} app, providing a dedicated platform to their target audience.`}
-                color={"#ffffff"}
+                text={`Appswaves are at the leading edge of technological advancement. We are more than just IT consultants because we are a top-tier IT consulting agency with a team that is deeply knowledgeable in technology. We work with you to create an IT roadmap that is prepared for the future. We take a customized strategy to make sure that your business not only adjusts but also thrives. We're here to improve your journey at every turn, from digitizing processes to optimizing your software portfolio to leveraging the potential of mobile solutions.              `}
               />
               <P2
                 text={`Whether you need to optimize your existing ${service} app by fixing the loopholes or build an ${service} app from scratch, our ${service} app development services guarantee to deliver a fail-proof, feature-rich application that could help you achieve exponential growth and scalability.`}
-                color={"#ffffff"}
               />
             </div>
             <div className="services-list">
-              {[1, 2, 3].map((v, i) => {
+              {[1, 2].map((v, i) => {
                 return (
                   <div>
                     <img
@@ -209,45 +373,67 @@ const ServiceDetails = () => {
                     />
                     <h2>0{v}</h2>
                     <H5
-                      text={"App Development Consultation"}
-                      color={"#ffffff"}
+                      text={"IT Consulting Services and Solutions for Business"}
                     />
                     <P2
-                      text={`Our ${service} app development service start with a detailed consultation between our in-house ${service} app development teams and stakeholders. We provide a complete roadmap to our ${service} app development framework, including the development cost, process, and tech stack.`}
-                      color={"#ffffff"}
+                      text={`Join Appswaves on a revolutionary IT adventure. As an IT consulting firm, we don't simply offer advice; we also work with you to improve your software architecture and create a tech-focused digital strategy. Our software engineers and IT consultants provide a seamless digital transformation, from strategic planning to exact execution, by optimizing your software portfolio.                      `}
                     />
                   </div>
                 );
               })}
             </div>
           </div>
-        </section>
-        <div className="container">
-          <section className="main-section">
-            <P1 text={"OUR CASE STUDIES"} color={"#ef5123"} />
-            <h2
-              style={{
-                color: "#000",
-              }}
-              className="heading"
-            >
-              The Success Stories Crafted By Our
-              <br />
-              <span
-                style={{
-                  fontWeight: 300,
-                }}
+        </section> */}
+        <div>
+          {seviceData[servicename]?.map((data, index) => {
+            return (
+              <section
+                className={`main-section ${
+                  (index + 1) % 2 === 0 ? "pink-coloured-container" : null
+                }`}
               >
-                App Development Company
-              </span>
-            </h2>
-            <P2
-              text={
-                "As a mobile app development company , we’ve met with several entrepreneurs and discussed our passion for blending technologies to develop highly intuitive and revolutionary solutions for their businesses and audiences. And we would love to have you look at some of them."
-              }
-            />
-          </section>
-          <section className="main-section usp-section">
+                <div className="container">
+                  {/* <P1 text={"OUR CASE STUDIES"} color={"#ef5123"} /> */}
+                  <h2
+                    style={{
+                      color: "#000",
+                      textTransform: "capitalize",
+                    }}
+                    className="heading"
+                  >
+                    {data.heading}
+                    <br />
+                  </h2>
+                  {data.text?.map((v, i) => {
+                    return <P2 text={v} />;
+                  })}
+                  {data.subData?.map((obj, index) => {
+                    return (
+                      <>
+                        <section className="main-section/">
+                          <h3
+                            style={{
+                              color: "#000",
+                              textTransform: "capitalize",
+                            }}
+                            className="helper-h4"
+                          >
+                            {obj.heading}
+                            <br />
+                          </h3>
+                          {obj.text?.map((v, i) => {
+                            return <P2 text={v} />;
+                          })}
+                        </section>
+                      </>
+                    );
+                  })}
+                </div>
+              </section>
+            );
+          })}
+
+          {/* <section className="main-section usp-section">
             <div className="container1">
               <P1 text={"OUR USP"} color={"#ef5123"} />
               <h2 className="heading">
@@ -255,7 +441,7 @@ const ServiceDetails = () => {
                 Experiences
               </h2>
               <P2
-                text={`A core portion of our ${service} application development company revolves around building highly-personalized experiences for businesses across multiple industry verticals.`}
+                text={`The IT consultants at Appswaves assist you in keeping up with the rapidly changing IT world of today, from IT strategy to IT budgeting, from business continuity planning to cloud and data transfer services, and beyond.              `}
               />
               <P2
                 text={`This enables us to create tailored ${service} app development plans for industries that cater to the ultra-specific needs of the customers. With experience developing more than 1000 apps for different sectors, our ${service} app development team knows what needs to be done to create the right app for you.`}
@@ -304,9 +490,9 @@ const ServiceDetails = () => {
                 </div>
               </ul>
             </div>
-          </section>
+          </section> */}
         </div>
-        <section className="why-section main-section">
+        {/* <section className="why-section main-section">
           <div className="container">
             <div className="text-container">
               <P1
@@ -360,8 +546,8 @@ const ServiceDetails = () => {
               </button>
             </div>
           </div>
-        </section>
-        <section className="main-section end-service-section">
+        </section> */}
+        {/* <section className="main-section end-service-section">
           <div className="container">
             <P1 text={"END-TO-END SERVICES"} color="#ef5123" center={true} />
             <h2
@@ -397,8 +583,8 @@ const ServiceDetails = () => {
               }}
             />
           </div>
-        </section>
-        <section className="main-section solution-section">
+        </section> */}
+        {/* <section className="main-section solution-section">
           <div className="container">
             <div>
               <P1 text={"WHITE LABEL SOLUTIONS"} color="#ef5123" />
@@ -444,14 +630,13 @@ const ServiceDetails = () => {
               />
             </div>
           </div>
-        </section>
-        <section className="main-section end-service-section">
+        </section> */}
+        {/* <section className="main-section end-service-section">
           <div className="container">
             <P1 text={"CLIENT BENEFITS"} color="#ef5123" />
             <h2
               style={{
                 color: "#fff",
-                // textAlign: "center",
               }}
               className="heading"
             >
@@ -490,7 +675,7 @@ const ServiceDetails = () => {
               }}
             />
           </div>
-        </section>
+        </section> */}
         <section className="main-section build-section">
           <div className="container">
             <div className="text-container">

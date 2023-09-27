@@ -26,13 +26,13 @@ const Navbar = ({ gradientButton = false }) => {
           >
             <div>
               <h3>Our Services</h3>
-              <div>
+              <div >
                 <Popup
                   trigger={
-                    <h4 style={{ marginBottom: 10 }}>Apps Development</h4>
+                    <h4 style={{ marginBottom: 10, }}>Apps Development</h4>
                   }
                   on="hover"
-                  position="right top"
+                  position="right top"                  
                 >
                   <div style={{ marginLeft: 50, paddingBottom: 30 }}>
                     <h6 style={{ marginBottom: 10 }}>
@@ -95,7 +95,7 @@ const Navbar = ({ gradientButton = false }) => {
 
                 <a
                   className="link-list-item"
-                  href={`/It consultancy`.replace(/\s+/g, "-")}
+                  href={`/IT consultancy`.replace(/\s+/g, "-")}
                 >
                   IT Consultancy
                 </a>
@@ -469,7 +469,7 @@ const Navbar = ({ gradientButton = false }) => {
       subRoutes: false,
     },
     // {
-    //   title: "About Appswaves",
+    //   title: "Payment",
     //   subRoutes: false,
     // },
     // {

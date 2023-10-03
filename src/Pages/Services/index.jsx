@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { H1, H2 } from "../../Helper/headings";
 import { P1 } from "../../Helper/paragraphs";
 import "../../Styles/service.css";
@@ -9,8 +9,13 @@ import ButtonComp from "../../Helper/button_comp";
 import axios from "axios";
 import OurClients from "../../Components/OurClients";
 import FeaturedSlider from "../../Components/FeaturedSlider";
+import { useLocation } from "react-router-dom";
 
 const Services = () => {
+  const location = useLocation();
+  useEffect(() => {
+    document.title = `Appswaves ${location.pathname.replace("/", "")}`;
+  }, [location]);
   const formRef = useRef(null);
 
   const handleSubmit = (e) => {
@@ -287,15 +292,19 @@ const Services = () => {
 
   return (
     <Layout>
-      <main className="services-main-container container" style={{backgroundColor:"#000"}}>
-        <section className="consultation-section" >
+      <main
+        className="services-main-container container"
+        style={{ backgroundColor: "#000" }}
+      >
+        <section className="consultation-section">
           <div>
-            <div style={{color:'#14ffff'}}>
+            <div style={{ color: "#14ffff" }}>
               <li>Appswaves</li>
-              <EastSharpIcon color="red"/>
-              <li style={{color:'#fff'}}>Services</li>
+              <EastSharpIcon color="red" />
+              <li style={{ color: "#fff" }}>Services</li>
             </div>
-            <H1 color="#14ffff"
+            <H1
+              color="#14ffff"
               text={"Transform Business Growth With Revolutionary Services"}
             />
             <P1
@@ -304,7 +313,7 @@ const Services = () => {
               }
               color={"#ffff"}
             />
-            <ul className="helper-p1" style={{color:'#fff'}}>
+            <ul className="helper-p1" style={{ color: "#fff" }}>
               <li>Strategic roadmap planning</li>
               <li>Cloud-based solutions</li>
               <li>Process automation implementation</li>
@@ -313,8 +322,8 @@ const Services = () => {
           </div>
           <div>
             <form ref={formRef} onSubmit={handleSubmit} action="">
-              <h2 className="helper-h2" >
-                Book A Free<span style={{color:"#000"}}> Consultation</span>
+              <h2 className="helper-h2">
+                Book A Free<span style={{ color: "#000" }}> Consultation</span>
               </h2>
               <input
                 onChange={(e) => {
@@ -343,7 +352,6 @@ const Services = () => {
                 }}
                 required
                 placeholder="Describe Your Project Need"
-                
               />
               <p>
                 <input
@@ -354,15 +362,15 @@ const Services = () => {
                 />
                 <label htmlFor="">Share Non Disclosure Agreement</label>
               </p>
-              <ButtonComp text="Get in Touch" center={true}/>
+              <ButtonComp text="Get in Touch" center={true} />
             </form>
           </div>
         </section>
-        <div style={{backgroundColor:"#000"}}>
-        <FeaturedSlider />
+        <div style={{ backgroundColor: "#000" }}>
+          <FeaturedSlider />
         </div>
         <section className="primary-service-section main-section">
-          <H2 text={"Primary Services"} dataText="Primary" color="#14ffff"/>
+          <H2 text={"Primary Services"} dataText="Primary" color="#14ffff" />
           <div>
             {primaryService.map((service, index) => {
               return (
@@ -377,7 +385,11 @@ const Services = () => {
           </div>
         </section>
         <section className="primary-service-section main-section">
-          <H2 text={"Consulting Services"} dataText="Consulting"  color="#14ffff"/>
+          <H2
+            text={"Consulting Services"}
+            dataText="Consulting"
+            color="#14ffff"
+          />
           <div>
             {consultingServices.map((service, index) => {
               return (
@@ -392,7 +404,7 @@ const Services = () => {
           </div>
         </section>
         <section className="primary-service-section main-section">
-          <H2 text={"Trending Services"} dataText="Trending" color="#14ffff"/>
+          <H2 text={"Trending Services"} dataText="Trending" color="#14ffff" />
           <div>
             {trendingServices.map((service, index) => {
               return (

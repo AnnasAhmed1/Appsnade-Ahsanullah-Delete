@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../../Layout";
 import { H1, H4, H5 } from "../../Helper/headings";
 import { P1, P2 } from "../../Helper/paragraphs";
@@ -8,11 +8,15 @@ import AdjustIcon from "@mui/icons-material/Adjust";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import TextField from "@mui/material/TextField";
 import { MenuItem } from "@mui/material";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import axios from "axios";
 
 const SolutionDetails = () => {
   const { solutionname } = useParams();
+  const location = useLocation();
+  useEffect(() => {
+    document.title = `Appswaves ${location.pathname.replace("/", "")}`;
+  }, [location]);
 
   const handleSubmit = (e) => {
     console.log("formsubmit");

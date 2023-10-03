@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { P1 } from "../../Helper/paragraphs";
 import Input from "@mui/material/Input";
 import InputLabel from "@mui/material/InputLabel";
@@ -12,7 +12,11 @@ import axios from "axios";
 import NavOnlyLogo from "../../Components/navOnlyLogo";
 
 const Register = () => {
+
   const location = useLocation();
+  useEffect(() => {
+    document.title = `Appswaves ${location.pathname.replace("/", "")}`;
+  }, [location]);
   const navigate = useNavigate();
   const receivedValue = location.state;
   let email;

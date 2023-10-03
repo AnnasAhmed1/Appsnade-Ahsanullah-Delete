@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   MobileOutlined,
   AppleOutlined,
@@ -8,11 +8,15 @@ import {
 import "../../Styles/AppCostCalculator.css";
 import GradientButton from "../../Helper/GradientButton";
 import KeyboardBackspaceSharpIcon from "@mui/icons-material/KeyboardBackspaceSharp";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import instance from "../../Axois";
 import axios from "axios";
 import NavOnlyLogo from "../../Components/navOnlyLogo";
 const AppCostCalculator = () => {
+  const location = useLocation();
+  useEffect(() => {
+    document.title = `Appswaves ${location.pathname.replace("/", "")}`;
+  }, [location]);
   const formRef = useRef(null);
   const [activeSection, setActiveSection] = useState(1);
   const navigate = useNavigate();

@@ -504,7 +504,6 @@
 //                   style={{ color: "#14ffff", fontSize: 60, marginLeft: 300 }}>Web Design Development</h1>
 //               </div>
 
-
 //             </div>
 //             <button className="white-button">Lets Work Together</button>
 //           </div> */}
@@ -523,7 +522,7 @@
 //                   <AppSlider
 //                     key={index}
 //                     title={service.title}
-//                     route={"services"}  
+//                     route={"services"}
 //                   />
 //                 );
 //               })}
@@ -871,8 +870,6 @@
 
 // export default Home;
 
-
-
 import React, { useEffect, useState } from "react";
 import "../../Styles/home.css";
 import ColoredHeading from "../../Components/Colored_heading";
@@ -892,7 +889,7 @@ import PersonalInfo from "../../Components/Home/PersonalInfo";
 import Layout from "../../Layout";
 import Navbar from "../../Components/navbar";
 import Footer from "../../Components/footer";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import OurClients from "../../Components/OurClients";
 import FeaturedSlider from "../../Components/FeaturedSlider";
 import Aos from "aos";
@@ -1595,32 +1592,49 @@ const Home = () => {
             </div>
           </div>
 
-          <div data-aos='zoom-in' className="container">
-            <section data-aos='zoom-in' className="main-section services-section">
+          <div data-aos="zoom-in" className="container">
+            <section
+              data-aos="zoom-in"
+              className="main-section services-section"
+            >
               <div>
-                <H2 data-aos='zoom-in'
-                  color={'#14ffff'}
+                <H2
+                  data-aos="zoom-in"
+                  color={"#14ffff"}
                   text={"Our Mobile App Development Company Domain Expertise"}
                   dataText="App Development"
                 />
               </div>
               <div>
-                <P1 data-aos='zoom-in'
-                  color={'#ffff'}
-                  text={"Workflows can be optimized, interoperability can be improved, appointment scheduling can be automated, and other features can be introduced to save doctors' and patients' time and improve the standard of treatment by creating healthcare applications and aiding businesses"}
+                <P1
+                  data-aos="zoom-in"
+                  color={"#ffff"}
+                  text={
+                    "Workflows can be optimized, interoperability can be improved, appointment scheduling can be automated, and other features can be introduced to save doctors' and patients' time and improve the standard of treatment by creating healthcare applications and aiding businesses"
+                  }
                 />
-                <H4 data-aos='zoom-in' text={"Custom App Development"} />
-                <p style={{ color: '#ffff' }} className="helper-p1" data-aos='zoom-in' >
+                <H4 data-aos="zoom-in" text={"Custom App Development"} />
+                <p
+                  style={{ color: "#ffff" }}
+                  className="helper-p1"
+                  data-aos="zoom-in"
+                >
                   {/* Our <span>custom software development</span> team onboards
                   versatile developers and technical personnel capable of
                   acknowledging your project’s custom requirements. */}
-                  Our custom app development team utilizes versatile
-                  developers and technical staff who can understand
-                  the unique requirements of your project.
-
+                  Our custom app development team utilizes versatile developers
+                  and technical staff who can understand the unique requirements
+                  of your project.
                 </p>
-                <H4 data-aos='zoom-in' text={"Mobile App Development Company"} />
-                <p style={{ color: '#ffff' }} className="helper-p1" data-aos='zoom-in'>
+                <H4
+                  data-aos="zoom-in"
+                  text={"Mobile App Development Company"}
+                />
+                <p
+                  style={{ color: "#ffff" }}
+                  className="helper-p1"
+                  data-aos="zoom-in"
+                >
                   {/* Craft the ideal product by redirecting your strategy in the
                   right direction. Start ahead with your
                   <span> Android application development</span> journey. With
@@ -1628,18 +1642,30 @@ const Home = () => {
                   continue to grow – building robust and custom applications for
                   you. */}
                   To provide the greatest mobile app solutions for customers,
-                  Appswaves is a digital hub made up of self-driven dreamers and inventors.
-                  All of our mobile projects go through an intensive development process
-                  before being made available to users on the appropriate platform.
+                  Appswaves is a digital hub made up of self-driven dreamers and
+                  inventors. All of our mobile projects go through an intensive
+                  development process before being made available to users on
+                  the appropriate platform.
                 </p>
-                <H4 data-aos='zoom-in' text={"Top-Rated iOS App Development Services"} />
-                <p style={{ color: '#ffff' }} className="helper-p1" data-aos='zoom-in'>
+                <H4
+                  data-aos="zoom-in"
+                  text={"Top-Rated iOS App Development Services"}
+                />
+                <p
+                  style={{ color: "#ffff" }}
+                  className="helper-p1"
+                  data-aos="zoom-in"
+                >
                   Hire iOS app developers from top-tier
                   <span> iOS app development company</span> to kick-start your
                   app entrepreneurial journey like never before!
                 </p>
-                <H4 data-aos='zoom-in' text={"Game Development"} />
-                <p style={{ color: '#ffff' }} className="helper-p1" data-aos='zoom-in'>
+                <H4 data-aos="zoom-in" text={"Game Development"} />
+                <p
+                  style={{ color: "#ffff" }}
+                  className="helper-p1"
+                  data-aos="zoom-in"
+                >
                   <span>Hire game developers </span> who will create{" "}
                   <span> cross-platform game development </span> solutions that
                   engage, and captivate users to the fullest.
@@ -1711,7 +1737,9 @@ const Home = () => {
               <H5 text={insights[1].text} />
               <p>{insights[1].date}</p> */}
                   <H2
-                    text={"Boosting Your Brand Through Innovative Mobile App Development Company"}
+                    text={
+                      "Boosting Your Brand Through Innovative Mobile App Development Company"
+                    }
                   />
                   <P1
                     text={
@@ -1719,7 +1747,9 @@ const Home = () => {
                     }
                   />
                   <H2
-                    text={"Our Mobile App Design Company Can Turn Your Dream Into Reality"}
+                    text={
+                      "Our Mobile App Design Company Can Turn Your Dream Into Reality"
+                    }
                   />
                   <P1
                     text={
@@ -1727,20 +1757,30 @@ const Home = () => {
                     }
                   />
                   <P1
-                    text={"The primary goal of our mobile app design company was to produce intuitive, aesthetically pleasing apps that would increase user pleasure and engagement. To strengthen your brand and improve brand recognition, we also make sure that the design is aligned with your brand identity and messaging."}
+                    text={
+                      "The primary goal of our mobile app design company was to produce intuitive, aesthetically pleasing apps that would increase user pleasure and engagement. To strengthen your brand and improve brand recognition, we also make sure that the design is aligned with your brand identity and messaging."
+                    }
                   />
 
                   <H2
-                    text={"A Mobile App Development Company  utilizes  AI and Machine Learning Algorithms"}
+                    text={
+                      "A Mobile App Development Company  utilizes  AI and Machine Learning Algorithms"
+                    }
                   />
                   <P1
-                    text={"We have incorporated AI and MLA into our business strategy to provide our customers with more complex and scalable digital solutions to stay on top of the changing trends.Mobile custom app development has been drastically changed by innovations in machine learning techniques. Our developers can access the machine-learning features of the device via the numerous APIs provided by the SDKs for Android and iOS. We improve custom app development services by leveraging sophisticated features and give users a smooth experience by utilizing the revolutionary technologies of AI and MLA. Since there is always space for improvement, Appswaves works to provide its clients with the best custom app development services possible so they can stay up with the fast-paced changes in the digital world "}
+                    text={
+                      "We have incorporated AI and MLA into our business strategy to provide our customers with more complex and scalable digital solutions to stay on top of the changing trends.Mobile custom app development has been drastically changed by innovations in machine learning techniques. Our developers can access the machine-learning features of the device via the numerous APIs provided by the SDKs for Android and iOS. We improve custom app development services by leveraging sophisticated features and give users a smooth experience by utilizing the revolutionary technologies of AI and MLA. Since there is always space for improvement, Appswaves works to provide its clients with the best custom app development services possible so they can stay up with the fast-paced changes in the digital world "
+                    }
                   />
                   <H2
-                    text={"Cloud-Based Mobile Solutions Provided by a Mobile App Development Company"}
+                    text={
+                      "Cloud-Based Mobile Solutions Provided by a Mobile App Development Company"
+                    }
                   />
                   <P1
-                    text={"Our skilled mobile app developers deliver to our clients compact, reliable, and robust applications by utilizing the possibilities of SaaS (Software as a Service) These cloud-based applications enable easy connectivity with other applications and services, enabling app development companies to improve workflow and streamline operations. These firms consequently see an increase in conversions and customer retention. Being an app design company, we guarantee that our clients obtain the most modern and innovative custom app development services. We ensure that your data is protected from any breach with our cloud-based solutions by utilizing the sophisticated security measures and encryption that the cloud provides"}
+                    text={
+                      "Our skilled mobile app developers deliver to our clients compact, reliable, and robust applications by utilizing the possibilities of SaaS (Software as a Service) These cloud-based applications enable easy connectivity with other applications and services, enabling app development companies to improve workflow and streamline operations. These firms consequently see an increase in conversions and customer retention. Being an app design company, we guarantee that our clients obtain the most modern and innovative custom app development services. We ensure that your data is protected from any breach with our cloud-based solutions by utilizing the sophisticated security measures and encryption that the cloud provides"
+                    }
                   />
                 </div>
               </div>
@@ -1757,8 +1797,6 @@ const Home = () => {
           </div> */}
             </div>
           </section>
-
-
 
           {/* <FeaturedSlider /> */}
           {/* <OurClients
@@ -1790,4 +1828,3 @@ const Home = () => {
 };
 
 export default Home;
-

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { H1, H2, H3, H4 } from "../../Helper/headings";
 import { P1, P2 } from "../../Helper/paragraphs";
 import "../../Styles/service.css";
@@ -9,12 +9,16 @@ import ButtonComp from "../../Helper/button_comp";
 import axios from "axios";
 import OurClients from "../../Components/OurClients";
 import FeaturedSlider from "../../Components/FeaturedSlider";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import GradeSharpIcon from "@mui/icons-material/GradeSharp";
 import AwardsSlider from "../../Components/Home/AwardsSlider";
 import "../../Styles/podcast.css";
 
 const Podcast = () => {
+  const location = useLocation();
+  useEffect(() => {
+    document.title = `Appswaves ${location.pathname.replace("/", "")}`;
+  }, [location]);
   const insightname = "Podcast";
 
   const episodes = [

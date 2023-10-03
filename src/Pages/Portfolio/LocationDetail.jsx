@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { H1, H2 } from "../../Helper/headings";
 import { P1 } from "../../Helper/paragraphs";
 import "../../Styles/service.css";
@@ -10,8 +10,13 @@ import axios from "axios";
 import OurClients from "../../Components/OurClients";
 import FeaturedSlider from "../../Components/FeaturedSlider";
 import LocationCard from "../../Components/Location/LocationCard";
+import { useLocation } from "react-router-dom";
 
 const LocationDetail = () => {
+  const location = useLocation();
+  useEffect(() => {
+    document.title = `Appswaves ${location.pathname.replace("/", "")}`;
+  }, [location]);
   const formRef = useRef(null);
 
   const handleSubmit = (e) => {

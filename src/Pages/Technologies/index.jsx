@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { H1, H2 } from "../../Helper/headings";
 import { P1 } from "../../Helper/paragraphs";
 import "../../Styles/service.css";
@@ -9,9 +9,14 @@ import ButtonComp from "../../Helper/button_comp";
 import axios from "axios";
 import OurClients from "../../Components/OurClients";
 import FeaturedSlider from "../../Components/FeaturedSlider";
+import { useLocation } from "react-router-dom";
 
 const Technologies = () => {
   const formRef = useRef(null);
+  const location = useLocation();
+  useEffect(() => {
+    document.title = `Appswaves ${location.pathname.replace("/", "")}`;
+  }, [location]);
 
   const handleSubmit = (e) => {
     console.log("formsubmit");
@@ -287,22 +292,28 @@ const Technologies = () => {
 
   return (
     <Layout>
-      <main className="services-main-container container" style={{backgroundColor:"#000"}}>
+      <main
+        className="services-main-container container"
+        style={{ backgroundColor: "#000" }}
+      >
         <section className="consultation-section">
           <div>
-            <div  style={{color:"#14ffff"}}>
+            <div style={{ color: "#14ffff" }}>
               <li>Appswaves</li>
               <EastSharpIcon />
               <li>Technologies </li>
             </div>
-            <H1 text={"Revolutionary Technologies For A Changing World"} color={"#14ffff"}/>
+            <H1
+              text={"Revolutionary Technologies For A Changing World"}
+              color={"#14ffff"}
+            />
             <P1
               text={
                 "At Appswaves, we harness the power of revolutionary technologies, employing a diverse range of programming languages and platforms to create custom solutions that perfectly align with the unique needs of our clients."
               }
               color={"#ffff"}
             />
-            <ul className="helper-p1" style={{color:'#fff'}}>
+            <ul className="helper-p1" style={{ color: "#fff" }}>
               <li>Emerging technology adoption</li>
               <li>Cross-platform compatibilitys</li>
               <li>Agile development process</li>

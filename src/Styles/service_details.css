@@ -143,7 +143,7 @@
 }
 
 .pink-coloured-container {
-    background-color: #ED3C5F !important;
+    background-color: #5DD5E1 !important;
 }
 
 .featured-container .container {
@@ -152,12 +152,12 @@
     column-gap: 20px;
 }
 
-.featured-container h1 {
+/* .featured-container h1 {
     font-size: 90px;
     color: #ffffff;
     text-align: center;
 
-}
+} */
 
 .featured-container p {
     line-height: 34px;
@@ -178,9 +178,9 @@
         width: 60px;
     }
 
-    .featured-container h1 {
+    /* .featured-container h1 {
         font-size: 75px;
-    }
+    } */
 
     .featured-container p {
 

@@ -19,7 +19,7 @@
     .home-main-container .developmentListContainer {
         margin-top: 200px;
         justify-content: start;
-        
+
     }
 
     .home-main-container .developmentListContainer>div:nth-child(1) {
@@ -163,7 +163,7 @@
 
 .home-main-container .AMJ-section {
     background-color: #ffffff;
-    padding: 70px 70px 0;
+    padding: 30px 30px 0;
 }
 
 .home-main-container .AMJ-section div:nth-child(1) {
@@ -303,4 +303,15 @@
     /* display: flex; */
     /* flex-wrap: wrap; */
     /* padding: 30px 40px 30px 0; */
+}
+
+
+@media (max-width:576px) {
+
+    .home-main-container .AMJ-section,
+    .home-main-container .soundly-section {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
 }

@@ -1,17 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
 import {
-  MobileOutlined,
-  AppleOutlined,
   AndroidOutlined,
-  ShoppingCartOutlined,
+  AppleOutlined,
+  MobileOutlined,
 } from "@ant-design/icons";
-import "../../Styles/AppCostCalculator.css";
-import GradientButton from "../../Helper/GradientButton";
 import KeyboardBackspaceSharpIcon from "@mui/icons-material/KeyboardBackspaceSharp";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import instance from "../../Axois";
-import axios from "axios";
+import React, { useEffect, useRef, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import NavOnlyLogo from "../../Components/navOnlyLogo";
+import GradientButton from "../../Helper/GradientButton";
+import "../../Styles/AppCostCalculator.css";
 const AppCostCalculator = () => {
   const location = useLocation();
   useEffect(() => {

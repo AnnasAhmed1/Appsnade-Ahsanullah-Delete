@@ -1,23 +1,22 @@
-import React, { useEffect } from "react";
-import Layout from "../../Layout";
-import { H1, H4, H5 } from "../../Helper/headings";
-import { P1, P2 } from "../../Helper/paragraphs";
-import GradientButton from "../../Helper/GradientButton";
-import "../../Styles/service_details.css";
-import AdjustIcon from "@mui/icons-material/Adjust";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
-import TextField from "@mui/material/TextField";
 import { MenuItem } from "@mui/material";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import TextField from "@mui/material/TextField";
 import axios from "axios";
-import DetailsForm from "../../Components/details_form";
+import React, { useEffect } from "react";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+import GradientButton from "../../Helper/GradientButton";
+import { H1 } from "../../Helper/headings";
+import { P2 } from "../../Helper/paragraphs";
+import Layout from "../../Layout";
+import "../../Styles/service_details.css";
 
 const ServiceDetails = () => {
   const location = useLocation();
   useEffect(() => {
     document.title = `Appswaves ${location.pathname.replace("/", "")}`;
   }, [location]);
-  const { servicename } = useParams();
+  let { servicename } = useParams();
+  servicename = servicename.toLocaleLowerCase();
   const handleSubmit = (e) => {
     console.log("formsubmit");
     e.preventDefault();
@@ -49,7 +48,7 @@ const ServiceDetails = () => {
   const service = servicename.split("-")[0];
 
   const seviceData = {
-    "Web-Development": [
+    "web-development": [
       {
         heading: "Best Web Development Company",
         text: [
@@ -156,7 +155,7 @@ const ServiceDetails = () => {
         ],
       },
     ],
-    "IT-consultancy": [
+    "it-consultancy": [
       {
         heading: "IT Consultancy Agency",
         text: [
@@ -388,12 +387,12 @@ const ServiceDetails = () => {
             </div>
           </div>
         </section> */}
-        <div>
+        <div className="main-section">
           {seviceData[servicename]?.map((data, index) => {
             return (
               <section
-                className={`main-section ${
-                  (index + 1) % 2 === 0 ? "pink-coloured-container" : null
+                className={`main-section/ ${
+                  (index + 1) % 2 === 0 ? "pink-coloured-container/" : null
                 }`}
               >
                 <div className="container">
@@ -419,10 +418,11 @@ const ServiceDetails = () => {
                             style={{
                               color: "#000",
                               textTransform: "capitalize",
+                              // paddingLeft: "10px",
                             }}
-                            className="helper-h4"
+                            className="helper-h4 service-detail-sub-heading"
                           >
-                            {obj.heading}
+                            - {obj.heading}
                             <br />
                           </h3>
                           {obj.text?.map((v, i) => {

@@ -1,17 +1,9 @@
-import React, { useEffect, useRef } from "react";
-import { H1, H2 } from "../../Helper/headings";
-import { P1 } from "../../Helper/paragraphs";
-import "../../Styles/service.css";
-import ServiceCard from "../../Components/Services/ServiceCard";
-import EastSharpIcon from "@mui/icons-material/EastSharp";
-import Layout from "../../Layout";
-import ButtonComp from "../../Helper/button_comp";
 import axios from "axios";
-import OurClients from "../../Components/OurClients";
-import FeaturedSlider from "../../Components/FeaturedSlider";
+import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import ContactSlider from "../../Components/ContactSlider";
 import GradientButton from "../../Helper/GradientButton";
-import { useLocation } from "react-router-dom";
+import "../../Styles/service.css";
 const Contact = () => {
   const location = useLocation();
   useEffect(() => {

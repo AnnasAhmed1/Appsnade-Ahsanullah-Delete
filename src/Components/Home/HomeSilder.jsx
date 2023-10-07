@@ -35,7 +35,7 @@ const HomeSilder = () => {
     return (
       <p
         className={"arrows next-arrow"}
-        style={{ ...style, display: "inline-block/" }}
+        style={{ ...style, display: "inline-block/", zIndex: "2" }}
         onClick={onClick}
       >
         <EastSharpIcon />
@@ -47,7 +47,7 @@ const HomeSilder = () => {
     return (
       <p
         className={"arrows prev-arrow"}
-        style={{ ...style, display: "inline-block/" }}
+        style={{ ...style, display: "inline-block/", zIndex: "2" }}
         onClick={onClick}
       >
         <WestSharpIcon />0{activeSlide + 1}
